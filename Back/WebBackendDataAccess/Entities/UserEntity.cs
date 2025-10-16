@@ -1,4 +1,5 @@
-﻿namespace WebBackendDataAccess.Entities
+﻿
+namespace WebBackend.DataAccess.Entities
 {
     public class UserEntity
     {
@@ -7,5 +8,6 @@
         public string Email { get; set; }
         public bool IsEmailConfirmed { get; set; }
         public string PasswordHash { get; set; }
+        public List<ReviewEntity> Reviews { get; set; }
     }
 }

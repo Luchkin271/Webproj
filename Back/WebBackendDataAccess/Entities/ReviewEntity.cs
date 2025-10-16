@@ -1,15 +1,12 @@
-﻿using System.Collections.Generic;
-using System.Reflection.Emit;
-using System.Xml.Linq;
-using WebBackend.Core.Models;
-using static System.Net.Mime.MediaTypeNames;
+﻿using WebBackend.Core.Models;
 
-namespace WebBackendDataAccess.Entities
+namespace WebBackend.DataAccess.Entities
 {
     public class ReviewEntity
     {
         public Guid Id { get; set; }
-        public User User { get; set; }
+        public UserEntity User { get; set; }
         public string Context { get; set; }
+        public GoodEntity threadedGood { get; set; }
     }
 }
