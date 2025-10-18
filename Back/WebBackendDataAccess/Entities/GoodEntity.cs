@@ -11,5 +11,6 @@ namespace WebBackend.DataAccess.Entities
         public ManufactureEntity Manufacturer { get; set; }
         public List<ReviewEntity> Reviews { get; set; }
         public string Specifications { get; set; }
+        public Guid ManufacturerId { get; set; }
     }
 }

@@ -6,7 +6,9 @@ namespace WebBackend.DataAccess.Entities
     {
         public Guid Id { get; set; }
         public UserEntity User { get; set; }
+        public Guid UserId { get; set; }
         public string Context { get; set; }
-        public GoodEntity threadedGood { get; set; }
+        public GoodEntity ThreadedGood { get; set; }
+        public Guid ThreadedGoodId { get; set; }
     }
 }

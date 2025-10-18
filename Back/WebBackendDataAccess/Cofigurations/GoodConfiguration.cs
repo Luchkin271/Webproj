@@ -27,12 +27,12 @@ namespace WebBackend.DataAccess.Cofigurations
 
             builder.HasOne(g => g.Manufacturer)
                 .WithMany(m => m.Goods)
-                .HasForeignKey(g => g.Manufacturer.Id)
+                .HasForeignKey(g => g.ManufacturerId)
                 .OnDelete(DeleteBehavior.Restrict);
 
             builder.HasMany(g => g.Reviews)
-                .WithOne(r => r.threadedGood)
-                .HasForeignKey(r => r.threadedGood.Id)
+                .WithOne(r => r.ThreadedGood)
+                .HasForeignKey(r => r.ThreadedGoodId)
                 .OnDelete(DeleteBehavior.Cascade);
         }
     }
